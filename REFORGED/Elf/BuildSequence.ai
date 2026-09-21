@@ -75,6 +75,7 @@ function global_build_sequence takes nothing returns nothing
     endif
     if HasExpanded() then
       call DefendTownsFrontDone(2, uANCIENT_PROTECT, 75)
+      call DefendTownsDone(1, uDEN_OF_WONDERS, 72)
       if GetGold() > 2000 then
             call DefendTownsFrontDone(3, uANCIENT_PROTECT, 35)
             if tier >= 2 and TownCount(uANCIENT_PROTECT) >= 4 and TownCount(uDEN_OF_WONDERS) < 2 then
